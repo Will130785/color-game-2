@@ -31,6 +31,11 @@ html {
     html {
         font-size: 15%;
     }
+
+    .circle {
+        height: 3rem;
+        width: 3rem;
+    }
 }
 
 body {
@@ -39,7 +44,7 @@ body {
 
 .game-container {
     display: grid;
-    grid-template-rows: min-content 5rem min-content;
+    grid-template-rows: min-content 5rem 100vh;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     background-color: rgb(43, 43, 43);
@@ -138,4 +143,18 @@ body {
     border-radius: 50%;
     transition: all 1s;
 
+}
+
+@media only screen and (max-width: 400px) {
+    .circle {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .circle {
+        height: 8rem;
+        width: 8rem;
+    }
 }
