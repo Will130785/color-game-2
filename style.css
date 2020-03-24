@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 25%;
+    }
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.game-container {
+    display: grid;
+    grid-template-rows: min-content 5vh 64.5vh;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    background-color: rgb(43, 43, 43);
+}
+
+.head-section {
+    grid-column: 1 / -1;
+    width: 100%;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-color: rgb(255, 192, 20);
+    text-align: center;
+    color: #fff
+}
+
+.heading {
+    margin: 4rem 0;
+}
+
+#color-display {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 8rem;
+
+}
+
+.game-bar {
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #fff;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(255, 192, 20);
+    background-color: #fff;
+    transition: all .75s
+
+}
+
+.btn:hover {
+    background-color: rgb(255, 192, 20);
+    color: #fff;
+}
+
+#new-game {
+    grid-column: 3 / 4;
+    
+}
+
+#easy-btn {
+    grid-column: 9 / 10;
+
+}
+
+#hard-btn {
+    grid-column: 10 / 11;
+
+}
+
+.message {
+    grid-column: 5 / 8;
+    margin: auto;
+    font-size: 1.4rem;
+
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
+
+.game-board {
+    grid-row: 3 / 4;
+    grid-column: 3 / 11;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(3, min-content);
+    grid-gap: 2rem;
+    margin: 5rem 0;
+
+}
+
+.circle {
+    height: 20rem;
+    width: 20rem;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    transition: all 1s;
+
+}

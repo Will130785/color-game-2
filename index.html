@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main game container -->
+    <section class="game-container">
+
+        <!-- Head section content -->
+        <div class="head-section">
+            <!-- Title -->
+            <h1 class="heading">The RGB Color Game</h1>
+            <!-- Color display -->
+            <h2 id="color-display">RGB</h2>
+
+        </div>
+
+        <!-- Game bar componenents-->
+        <div class="game-bar">
+        <!-- New game button -->
+        <button class="btn" id="new-game">New Colors</button>
+        <!-- Game status message display -->
+        <div class="message" id="game-message"></div>
+        <!-- Game difficulty buttons -->
+        <button class="btn" id="easy-btn">Easy</button>
+        <button class="btn" id="hard-btn">Hard</button>
+        </div>
+
+        <!-- game squares -->
+        <div class="game-board">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+
+        </div>
+
+    </section>
+    
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
