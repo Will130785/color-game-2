@@ -23,13 +23,13 @@ html {
 
 @media only screen and (max-width: 400px) {
     html {
-        font-size: 30%;
+        font-size: 20%;
     }
 }
 
 @media only screen and (max-width: 350px) {
     html {
-        font-size: 25%;
+        font-size: 15%;
     }
 }
 
@@ -39,7 +39,7 @@ body {
 
 .game-container {
     display: grid;
-    grid-template-rows: min-content 5vh 64.5vh;
+    grid-template-rows: min-content 5rem min-content;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     background-color: rgb(43, 43, 43);
